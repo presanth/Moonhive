@@ -1,0 +1,60 @@
+.register_section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register_box{
+    width: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+.register_head{
+    font-size: 25px ;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.reg_inp_box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.reg_inp_box input, select{
+    width: 70%;
+    height: 2.6rem;
+    border-radius: 3px;
+    border: 2px solid silver;
+    outline: none;
+    position: relative;
+    margin-bottom: 2rem;
+    padding:2px 7px;
+    font-size: 16px;
+}
+.reg_inp_box label{
+    position: absolute;
+    padding: 3px 0;
+    top: -13px;
+    left: 5.3rem;
+    background: #fff;
+    font-size: 17px;
+    font-weight: 600;
+}
+.reg_btn_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.reg_btn{
+    width: 200px;
+    height: 2.3rem;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid gray;
+    border-radius: 7px;
+}
