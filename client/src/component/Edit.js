@@ -58,49 +58,14 @@ function Edit() {
         fetchUser()
     })
   return (
-        // <div className='register_section'>
-        //     <div className='register_box'>
-        //         <p className='register_head'>Edit Account</p>
-        //         {/* <p>{error}</p> */}
-        //         <div className='reg_inp_box'>
-        //             <input type="text" value={name} onChange={(e)=>setName(e.target.value)}/>
-        //             <label>Name</label>
-        //         </div>
-        //         <div className='reg_inp_box'>
-        //             <input type="text" value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
-        //             <label>Email</label>
-        //         </div>
-        //         <div className='reg_inp_box'>
-        //             <select value={prof} onChange={(e)=>{setProf(e.target.value)}}>
-        //                 <option value="">Select your profession</option>
-        //                 <option value="student">Student</option>
-        //                 <option value="working">Working</option>
-        //                 <option value="frelancing">Freelancing</option>
-        //                 <option value="tutor">Tutor</option>
-        //             </select>
-        //             <label>Professsion</label>
-        //         </div>
-        //         <div className='reg_inp_box'>
-        //             <input type="text" value={contact} onChange={(e)=>{setContact(e.target.value)}}/>
-        //             <label>Contact</label>
-        //         </div>
-        //         <div className='reg_inp_box'>
-        //             <input type="text" value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
-        //             <label>Password</label>
-        //         </div>
-        //         <div className='reg_btn_box'>
-        //             <button className='reg_btn' onClick={(e)=>{editData(e)}}>Submit</button>
-        //         </div>
-        //     </div>
-        // </div>
         <div className="register_section">
       <div className="register_box">
         <p className="register_head">Edit Account</p>
           <div  className="reg_inp_box">
             <input
               type="text"
-              onChange={(e) => setName(e.target.value)}
               value={name}
+              onChange={(e) => setName(e.target.value)}
             />
             <label>Name</label>
           </div>

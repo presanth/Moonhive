@@ -8,7 +8,7 @@ const registration=mongoose.model('registration',{
     user_name:String,
     user_email:String,
     user_profession:String,
-    user_contact:Number,
+    user_contact:String,
     user_profile:String,
     user_password:String,
     user_date:String

@@ -170,7 +170,6 @@
     position: absolute;
     width: 50%;
     height: 14rem;
-    border: 1px solid black;
     margin: auto;
     background: #e8e8e8;
     z-index: 100;
@@ -206,4 +205,7 @@
 }
 .show{
     display: flex;
+    left: 23rem;
+    top: 21rem;
+    box-shadow: 2px 5px 7px 0px rgba(0,0,0,0.75);
 }

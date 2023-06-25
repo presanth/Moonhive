@@ -34,7 +34,8 @@ function Discussion() {
     try{
       const result = await axios.post('http://localhost:8000/addqustion',body)
       alert(result.data.message)
-      location('/dashboard')
+      // location('/dashboard')
+      fetchQues()
     }catch(error){
       alert(error.response.data.message)
     }
@@ -68,7 +69,7 @@ const fetchQues = async ()=>{
             <button className='ask_button' onClick={(e)=> myFunction(e)}>Ask a question</button>
           </div>
           <div className='ask_box' id='myPopup'>
-            <textarea onChange={(e)=>{setQues(e.target.value)}} ></textarea>
+            <textarea onChange={(e)=>{setQues(e.target.value)}} placeholder='Ask Your Questions....'></textarea>
             <button className='submit_ask' onClick={(e)=>{sendQues(e)}}>Submit</button>
           </div>
           <hr className='discussion_brake'/>
