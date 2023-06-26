@@ -70,7 +70,7 @@ function Register() {
                     <option value="frelancing">Freelancing</option>
                     <option value="tutor">Tutor</option>
                 </select>
-                <label>Professsion</label>
+                <label>Profession</label>
             </div>
             <div className='reg_inp_box'>
                 <input type="text" onChange={(e)=>{setContact(e.target.value)}}/>

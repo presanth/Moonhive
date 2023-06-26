@@ -171,7 +171,7 @@
 
 
 /* Discuss */
-.discussion_box{
+.discussion_box_das{
     width: 100%;
     padding: 3rem 0 4rem 0;
     background: #f5f7fa;
@@ -179,13 +179,14 @@
     flex-direction: column;
     align-items: center;
 }
-.dis_header{
+.dis_header_das{
     font-size: 22px;
     margin-right: auto;
     margin-left: 12rem;
-    font-family: fantasy;
+    font-family: oswald;
     margin-bottom: 1rem;
     color: #000000c9;
+    font-weight: 600;
 }
 .dash_discussion{
     width: 75%;

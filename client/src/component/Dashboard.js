@@ -64,8 +64,8 @@ function Dashboard() {
           </div>
         </div>
         {/* Discuss */}
-        <div className='discussion_box'>
-          <p className='dis_header'>Discussions</p>
+        <div className='discussion_box_das'>
+          <p className='dis_header_das'>Discussions</p>
           <div className='dash_discussion'>
             {/* Top Nav section in discussion box */}
             <div className='top_box'>

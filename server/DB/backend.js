@@ -59,33 +59,34 @@ const getuser = (id)=>{
         else{
             return{
                 statusCode:404,
-                message:"employee not present"
+                message:"user not present"
             }
         }
     })
 }
 
-const edituser = (id, name, email, prof, contact,password,day)=> {
+const edituser = (id, mname, email, prof, contact,img,password,day)=> {
     return db.registration.findOne({user_id:id}).then(result => {
         if (result) {
             result.user_id = id
-            result.user_name = name
+            result.user_name = mname
             result.user_email = email
             result.user_profession = prof
             result.user_contact = contact
+            result.user_profile = img
             result.user_password = password
             result.user_date = day
 
             result.save()
             return {
                 statusCode: 200,
-                message: 'Employee data updated'
+                message: 'user data updated'
             }
         }
         else {
             return {
                 statusCode: 404,
-                message: 'Employee not present'
+                message: 'User not present'
             }
         }
     })

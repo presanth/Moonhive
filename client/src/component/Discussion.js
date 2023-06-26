@@ -72,7 +72,7 @@ const fetchQues = async ()=>{
             <textarea onChange={(e)=>{setQues(e.target.value)}} placeholder='Ask Your Questions....'></textarea>
             <button className='submit_ask' onClick={(e)=>{sendQues(e)}}>Submit</button>
           </div>
-          <hr className='discussion_brake'/>
+          <div className='discussion_brake'></div> 
           {/* discussions in discussion box */}
           <div className='dis_question'>
             <div className='qu_user'>
@@ -88,7 +88,7 @@ const fetchQues = async ()=>{
               <p className='answer_count'>1 <br/> <span>answers</span></p>
             </div>
           </div>
-          <hr className='discussion_brake'/>
+          <div className='discussion_brake'></div> 
 
           {alldata?.filter((item)=>{
                         if(search == ""){
@@ -99,25 +99,26 @@ const fetchQues = async ()=>{
                     }).map((item)=>(
 
 
-          <div className='dis_question'>
-            <div className='qu_user'>
-              <img src={item.img} className='qu_user_icon' alt="" />
-              <p className='qu_time'>2 days ago</p>
-              <p className='qu_name'>{item.name}</p>
+          <div className='dis_question_add'>
+            
+            <div className='dis_question'>
+              <div className='qu_user'>
+                <img src={item.img} className='qu_user_icon' alt="" />
+                <p className='qu_time'>2 days ago</p>
+                <p className='qu_name'>{item.name}</p>
+              </div>
+              <div className='user_question'>
+                <p>{item.question}</p>
+              </div>
+              <div className='answer_list'>
+                <p className='answer_count'>1 <br/> <span>answers</span></p>
+              </div>
             </div>
-            <div className='user_question'>
-              <p>{item.question}</p>
-            </div>
-            <div className='answer_list'>
-              <p className='answer_count'>1 <br/> <span>answers</span></p>
-            </div>
-            <hr className='discussion_brake'/>
+            <div className='discussion_brake'></div> 
           </div>
           
           ))}
-      
 
-          <hr className='discussion_brake'/>
           <a href=""className='view_discussion'>View more discussions</a>
         </div>
       </div>
